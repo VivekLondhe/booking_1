@@ -8,7 +8,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 
-class hoteltableseeder extends Seeder
+class hoteltableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,7 +17,7 @@ class hoteltableseeder extends Seeder
     {
         //
         $h1 = new Hotel;
-        
+
         $h1->name = "Krishna";
         $h1->mobile = "9822977709";
         $h1->save();

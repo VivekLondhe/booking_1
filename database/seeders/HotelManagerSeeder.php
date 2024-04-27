@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\HotelManager;
 
-class hotelmanegerseeder extends Seeder
+class hotelmanegerSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,7 +15,7 @@ class hotelmanegerseeder extends Seeder
     {
         //
         $m = new hotelmaneger;
-        
+
         $m->name = "Tony";
         $m->mobile = "4690422595";
         $m->Hotel_id = 1;

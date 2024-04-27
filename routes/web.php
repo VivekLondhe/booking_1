@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\newdashboardcontroller;
+use App\Http\Controllers\newprofilecontroller;
+use App\Http\Controllers\nnewdashboardcontroller;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
+Route::get('/newprofile', [newprofilecontroller::class,'index']);
+
+Route::get('/newdash', [nnewdashboardcontroller::class,'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
